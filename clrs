@@ -1,0 +1,6 @@
+def mix2colors(c1: vec3, c2: vec3) -> vec3:
+    c1 = vec3(c1) # copy of c1
+    c1.x = c2.x if c2.x > c1.x else c1.x
+    c1.y = c2.y if c2.y > c1.y else c1.y
+    c1.z = c2.z if c2.z > c1.z else c1.z
+    return c1
